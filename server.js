@@ -19,7 +19,7 @@ app.get('/blagues/:id', (req, res) => {
   if (joke) {
     res.json(joke);
   } else {
-    res.status(404).json({ error: 'Joke not found' });
+    res.status(404).json({ error: 'blague non trouvé désoler' });
   }
 });
 
